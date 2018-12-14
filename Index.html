@@ -9,6 +9,7 @@
     <body>
             <header>
                     <span class="logo">My WebSite</span>
+                    <a id="toggleMenu">Menu<a></a>
                     <nav>
                       <ul>
                         <li><a href="index.html">Home</a></li>
@@ -17,21 +18,31 @@
                       </ul>
                     </nav>
                   </header>
-            <nav>
-                    <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="resume.html">Resume</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </nav>
+                </p>
+                </main>
 
         <h1>Hello, I am CT</h1>
-        <p>
-
+                </body>
         <img 
+        style="border-radius: 50%; float: left; margin-right: 1em;"
         class=avatar
         src="https://www.avatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
         
     <p>Hello my name is CT. I like the codes.  The codes are great!Hello my name is CT. I like the codes.  The codes are great!Hello my name is CT. I like the codes.  The codes are great!Hello my name is CT. I like the codes.  The codes are great!</p>
 
+    <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+              'click',
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            );
+          </script>
 </html>
